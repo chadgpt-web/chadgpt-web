@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>$CHADGPT | The Ultimate MemeCoin on Solana</title>
-
-  <!-- Neon font -->
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --bg-dark: #0f0f23;
@@ -39,6 +36,7 @@
       font-size: 4rem;
       margin: 10px 0;
       text-shadow: var(--neon-glow);
+      animation: pulseGlow 2.5s infinite ease-in-out;
     }
 
     h2 {
@@ -98,14 +96,76 @@
       color: #00e0ff;
       box-shadow: 0 0 10px #00e0ff;
     }
+
+    @keyframes pulseGlow {
+      0% {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      }
+      50% {
+        text-shadow: 0 0 20px #00ffa5, 0 0 30px #00ffcc;
+      }
+      100% {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="chadgpt-logo.png" alt="$CHADGPT Logo">
+  <header class="animate">
+    <img src="chadgpt-logo.png" alt="$CHADGPT Logo" />
     <h1>$CHADGPT</h1>
     <p>The most alpha, jacked AI on the Solana Blockchain</p>
   </header>
 
-  <section class="hero">
+  <section class="hero animate">
     <h2>Get Ready to Bench-Press Your Portfolio</h2>
+    <p>Launching soon on Solana DEX. Join the most legendary meme coin of all time.</p>
+    <img src="chadgpt-hero.jpg" alt="CHADGPT flexing" />
+  </section>
+
+  <section class="section animate">
+    <h2>€CHADGPT Comics & Memes</h2>
+    <div class="meme-gallery">
+      <img src="comic1.jpg" alt="Comic 1" />
+      <img src="comic2.jpg" alt="Comic 2" />
+      <img src="comic3.jpg" alt="Comic 3" />
+    </div>
+  </section>
+
+  <section class="section animate">
+    <h2>Tokenomics</h2>
+    <p>Supply: 1,000,000,000 $CHADGPT</p>
+    <p>50% Fair Launch | 25% LP | 15% Marketing | 10% Dev Fund</p>
+  </section>
+
+  <section class="section animate">
+    <h2>Roadmap</h2>
+    <ul style="list-style: none; font-size: 1.5rem;">
+      <li>PHASE 1: Website Launch + Meme Drops</li>
+      <li>PHASE 2: DEX Launch on Solana</li>
+      <li>PHASE 3: €CHADGPT Comic Series</li>
+      <li>PHASE 4: Meme Takeover + Listings</li>
+    </ul>
+  </section>
+
+  <footer class="animate">
+    <p>© 2025 $CHADGPT | Built for the Alpha Meme Lords | www.chadgpt.tech</p>
+  </footer>
+</body>
+</html>
