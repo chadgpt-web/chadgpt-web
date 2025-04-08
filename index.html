@@ -4,59 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$CHADGPT | The Ultimate MemeCoin on Solana</title>
+
+  <!-- Neon font -->
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg-dark: #0f0f23;
+      --neon-green: #00ff9f;
+      --neon-blue: #00e0ff;
+      --neon-glow: 0 0 20px #00ffcc, 0 0 40px #00ffa5;
+    }
+
     body {
       margin: 0;
       font-family: 'Bangers', cursive;
-      background: #0f0f23;
-      color: #00ff9f;
+      background: var(--bg-dark);
+      color: var(--neon-green);
       text-align: center;
     }
+
     header {
       background: #1a1a3d;
       padding: 30px;
+      box-shadow: var(--neon-glow);
     }
+
     header img {
       max-width: 180px;
+      filter: drop-shadow(0 0 15px #00ffa5);
     }
+
     h1 {
       font-size: 4rem;
       margin: 10px 0;
+      text-shadow: var(--neon-glow);
     }
+
+    h2 {
+      text-shadow: var(--neon-glow);
+    }
+
     .hero {
       padding: 50px 20px;
     }
+
     .hero img {
       max-width: 300px;
       border-radius: 20px;
-      box-shadow: 0 0 20px #00ffcc;
+      box-shadow: var(--neon-glow);
+      transition: transform 0.3s ease;
     }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
     .section {
       padding: 60px 20px;
       background: #121230;
-      border-top: 4px solid #00ffcc;
-      border-bottom: 4px solid #00ffcc;
+      border-top: 4px solid var(--neon-blue);
+      border-bottom: 4px solid var(--neon-blue);
+      margin-bottom: 40px;
     }
+
     .section h2 {
       font-size: 3rem;
       margin-bottom: 20px;
     }
+
     .meme-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
+
     .meme-gallery img {
       width: 300px;
       border-radius: 15px;
-      box-shadow: 0 0 10px #00ffa5;
+      box-shadow: 0 0 20px #00ffa5;
+      transition: transform 0.2s ease-in-out;
     }
+
+    .meme-gallery img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       background: #0b0b20;
       padding: 20px;
       font-size: 1.2rem;
+      color: #00e0ff;
+      box-shadow: 0 0 10px #00e0ff;
     }
   </style>
 </head>
@@ -69,37 +109,3 @@
 
   <section class="hero">
     <h2>Get Ready to Bench-Press Your Portfolio</h2>
-    <p>Launching soon on Solana DEX. Join the most legendary meme coin of all time.</p>
-    <img src="chadgpt-hero.jpg" alt="CHADGPT flexing">
-  </section>
-
-  <section class="section">
-    <h2>€CHADGPT Comics & Memes</h2>
-    <div class="meme-gallery">
-      <img src="comic1.jpg" alt="Comic 1">
-      <img src="comic2.jpg" alt="Comic 2">
-      <img src="comic3.jpg" alt="Comic 3">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Tokenomics</h2>
-    <p>Supply: 1,000,000,000 $CHADGPT</p>
-    <p>50% Fair Launch | 25% LP | 15% Marketing | 10% Dev Fund</p>
-  </section>
-
-  <section class="section">
-    <h2>Roadmap</h2>
-    <ul style="list-style: none; font-size: 1.5rem;">
-      <li>PHASE 1: Website Launch + Meme Drops</li>
-      <li>PHASE 2: DEX Launch on Solana</li>
-      <li>PHASE 3: €CHADGPT Comic Series</li>
-      <li>PHASE 4: Meme Takeover + Listings</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 $CHADGPT | Built for the Alpha Meme Lords | www.chadgpt.tech</p>
-  </footer>
-</body>
-</html>
