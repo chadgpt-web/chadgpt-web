@@ -13,35 +13,40 @@
       background-color: #0d0d23;
       color: #00ff9f;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     h1 {
       font-size: 4rem;
       text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffa5;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ff007f;
+      margin-top: 0;
     }
 
     .comic-frame {
-      border: 5px solid #00e0ff;
-      padding: 40px;
-      max-width: 700px;
-      margin: 20px auto;
+      max-width: 900px;
+      margin: 0 auto;
       background: #121230;
+      padding: 30px;
+      border: 5px solid #00e0ff;
+      border-radius: 20px;
       box-shadow: 0 0 30px #00ffa5;
     }
 
-    .coming-soon {
-      font-size: 2rem;
-      margin-top: 20px;
-      color: #ff007f;
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffa5;
+      margin: 20px 0;
     }
 
     .btn-home {
+      display: inline-block;
       margin-top: 40px;
       font-size: 1.5rem;
       padding: 15px 30px;
@@ -57,19 +62,16 @@
       transform: scale(1.1);
       background: #00e0ff;
     }
-
-    img {
-      max-width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #00ffa5;
-    }
   </style>
 </head>
 <body>
   <div class="comic-frame">
     <h1>CHAD COMICS</h1>
-    <img src="comic1.jpg" alt="CHADGPT Comic Teaser">
-    <p class="coming-soon">Issue #1 Coming Soon to the Blockchain...</p>
+    <h2>Issue #2: Gain Reversal</h2>
+    <img src="gain-reversal.png" alt="CHADGPT reverses the gains for humanity with creatine" />
+    <p style="font-size: 1.5rem; color: #00e0ff;">
+      While the world was shrinking… only $CHADGPT had the strength to spill creatine on the markets.
+    </p>
     <a href="index.html" class="btn-home">Return to $CHADGPT</a>
   </div>
 </body>
